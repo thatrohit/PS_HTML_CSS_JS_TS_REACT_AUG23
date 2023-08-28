@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      input {
+      /* Element level Selector */
+      /* input {
         border: 1px dashed red;
         border-radius: 5px;
+      } */
+      input.styled {
+        border: 1px dashed blue;
       }
     </style>
   </head>
   <body>
+    <input type="text" class="styled" />
+    <br />
     <input type="text" />
+    <br />
+    <input type="text" class="styled" />
     <br />
     <input type="text" />
     <br />
     <input type="text" />
     <br />
-    <input type="text" />
-    <br />
-    <input type="text" />
-    <br />
+    <input type="button" value="Button" />
+
+    <div class="styled">Div !</div>
   </body>
 </html>
