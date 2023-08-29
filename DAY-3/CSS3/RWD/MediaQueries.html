@@ -10,12 +10,26 @@
           background-color: burlywood;
         }
       } */
-      @media print {
+      /* @media print {
         body {
           background-color: burlywood;
+        }
+      } */
+      @media screen and (min-width: 576px) {
+        .styled {
+          background-color: burlywood;
+          width: 300px;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .styled {
+          background-color: rgb(135, 222, 136);
+          width: 700px;
         }
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="styled">Styled !</div>
+  </body>
 </html>
