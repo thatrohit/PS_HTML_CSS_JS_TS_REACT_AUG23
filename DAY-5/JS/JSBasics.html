@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // Global scoped variable
+      var x = 100; // global variable
+      console.log(x);
+
+      function Test() {
+        var y = 200; // Function scoped variable
+        console.log(y);
+
+        if (true) {
+          let z = 300; // Block scoped variable (ES6)
+          console.log(z);
+        }
+      }
+      Test();
+
+      function Add(x, y) {
+        return x + y;
+      }
+
+      console.log("The addition is : " + Add(20, 30));
+    </script>
+  </head>
+  <body></body>
+</html>
