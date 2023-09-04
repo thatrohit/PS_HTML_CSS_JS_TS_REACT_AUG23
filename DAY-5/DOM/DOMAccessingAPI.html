@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function OnLoadHandler() {
+        var allPs = document.getElementsByTagName("p");
+        for (let index = 0; index < allPs.length; index++) {
+          //   console.log(allPs[index].innerText);
+          allPs[index].innerText = "Paragraph - " + (index + 1);
+        }
+        console.log(allPs.length);
+      }
+      window.addEventListener("DOMContentLoaded", OnLoadHandler);
+      // document.getElementsByClassName
+      // document.querySelector
+      // document.querySelectorAll
+    </script>
+  </head>
+  <body>
+    <p>Para-1</p>
+    <p>Para-2</p>
+    <p>Para-3</p>
+  </body>
+</html>
+
+

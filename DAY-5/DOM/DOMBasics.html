@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .styled {
+        border: 2px solid black;
+        border-radius: 3px;
+      }
+    </style>
+    <script>
+      function ChangeText() {
+        // access the element (DOM api)
+        let targetDiv = document.getElementById("target"); // accessing DOM
+        targetDiv.innerText = "Dynamic !"; // DOM manipulation
+        // targetDiv.style.border = "2px solid red";
+        targetDiv.className = "styled";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="target">Static !</div>
+    <button onclick="ChangeText()">Click here to change text !</button>
+  </body>
+</html>
