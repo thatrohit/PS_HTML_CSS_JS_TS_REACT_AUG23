@@ -8,14 +8,20 @@
       // Global scoped variable
       var x = 100; // global variable
       console.log(x);
+      document.getElementById("result").innerText = x
+      document.querySelector("#result").innerHTML += x
+      alert(x)
 
       function Test() {
+
         var y = 200; // Function scoped variable
         console.log(y);
+        document.querySelector("#result").innerHTML += y
 
         if (true) {
           let z = 300; // Block scoped variable (ES6)
           console.log(z);
+          document.querySelector("#result").innerHTML += z
         }
       }
       Test();
@@ -27,5 +33,8 @@
       console.log("The addition is : " + Add(20, 30));
     </script>
   </head>
-  <body></body>
+  <body>
+    <div>testing div again</div>
+    <div id="result"></div>
+  </body>
 </html>
